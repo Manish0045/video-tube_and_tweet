@@ -1,0 +1,27 @@
+{
+  "name": "video-tube_and_tweet",
+  "version": "1.0.0",
+  "description": "application interface like youtube and tweets included app backend using node.js and mongodb",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node src/index.js",
+    "start": "nodemon src/index.js"
+  },
+  "keywords": [
+    "chai",
+    "javascript",
+    "node"
+  ],
+  "author": "Manish Sahani",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.4",
+    "express": "^4.18.2",
+    "helmet": "^7.1.0",
+    "mongoose": "^8.1.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  }
+}
