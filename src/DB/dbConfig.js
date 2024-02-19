@@ -1,5 +1,5 @@
-const mongoose = require('mongoose');
-const { DATABASE_NAME } = require('../constants')
+const mongoose = require("mongoose");
+const { DATABASE_NAME } = require("../constants")
 
 
 const DB_URL = process.env.MONGO_URI + DATABASE_NAME;
