@@ -4,6 +4,6 @@ const { registerUser } = require('../Controllers/user.controller');
 const { upload } = require('../Middlewares/fileUpload.middleware');
 
 router
-    .post('/register', upload.fields([{ name: "avatar", maxCount: 1 }, { name: "coverImage", maxCount: 1 }]), registerUser)
+    .post('/register', upload.fields([{ name: 'avatar' }, { name: 'coverImage' }]), registerUser)
 
 module.exports = router;
