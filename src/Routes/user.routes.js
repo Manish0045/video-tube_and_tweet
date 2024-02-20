@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const { registerUser, loginUser, logoutUser } = require('../Controllers/user.controller');
+const { registerUser, loginUser, logoutUser, refreshAccessToken } = require('../Controllers/user.controller');
 const { upload } = require('../Middlewares/fileUpload.middleware');
 const { verifyJWT } = require("../Middlewares/auth.middleware");
 
@@ -9,5 +9,6 @@ router
     .post('/login', loginUser)
     // secured routes
     .post('/logout', verifyJWT, logoutUser)
+    .post('/refreshToken', refreshAccessToken)
 
 module.exports = router;
