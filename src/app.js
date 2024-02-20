@@ -13,4 +13,10 @@ app.use(express.urlencoded({ extended: true, limit: '16kb' }));
 app.use(express.static("public"));
 app.use(cookieParser());
 
+// Global Routes
+const globalRoutes = require("./Routes/global.routes");
+
+// Routes
+app.use("/api", globalRoutes);
+
 module.exports = { app };
